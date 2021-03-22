@@ -19,4 +19,4 @@ The input,one 2-digit HEX (as 2nd complement) number, is read from keypad. Then 
 ```
 80=-128
 ```
-#### 3. Digital timer in form `MM:SS`
+#### 3. Digital timer in form `MM:SS `
