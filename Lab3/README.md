@@ -1,6 +1,6 @@
 ### Lab 3: Developing programms using LCD screen and keypad of ARM microcontroller 
 
-![lcd_keypad_shield](https://user-images.githubusercontent.com/50829499/112066801-b046e900-8b6f-11eb-8032-9270ef1e72fb.jpg)
+![lcd_keypad_shield](https://user-images.githubusercontent.com/50829499/112069409-70363500-8b74-11eb-85e2-44225259a6b0.jpg)
 
 #### 1. Building a simple Εlectronic lock using Keypad
 
