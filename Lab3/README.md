@@ -9,10 +9,12 @@ in total.
 
 #### 2. HEX to DEC convertion on lcd screen 
 
-The input,one 2-digit HEX (as 2nd complement) number, is read from keypad. Then is converted to DECIMAL form with sign. Example:
+The input,one 2-digit HEX (as 2nd complement) number, is read from keypad. Then is converted to DECIMAL form with sign. Examples:
 
 ```
-
+6E=+110
 ```
-
+```
+80=-128
+```
 #### 3. Digital timer in form `MM:SS`
