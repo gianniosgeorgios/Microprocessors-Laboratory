@@ -4,7 +4,7 @@ Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Labora
 
 ### Lab 1: Familiarizing with 8085 microcontroller and its Instruction Set Architecture
 
-1. Create a simple timer on leds  
+1. Create a simple timer on `LEDS`  
 2. Counting external interrputs during timing proccess 
 3. Compute a numeric expression and displaying to screen 
 4. Controller of an wagon's automation
@@ -32,7 +32,7 @@ Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Labora
 
 1. Sending strings from RAM to UART of ATmega16
 2. Reading number from UART and display it to Leds PORT
-3. Reading, analyzing and processing analog signals
+3. Reading, analyzing and processing Analog signals
 
 
 ### Lab 6: Iot Application for a Hospital 
