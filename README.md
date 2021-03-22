@@ -2,6 +2,9 @@
 
 Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Laboratory" course , NTUA 2019-2020
 
+![a](https://user-images.githubusercontent.com/50829499/112056161-60145a80-8b60-11eb-936b-2ece4bd918f8.jpg)
+
+
 ### Lab 1: Familiarizing with 8085 microcontroller and its Instruction Set Architecture
 
 1. Create a simple timer on `LEDS`
