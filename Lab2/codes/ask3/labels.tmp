@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.41</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\Nikolas\Desktop\ask3</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Nikolas\Desktop\ask3\ask3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Nikolas\Desktop\ask3\ask3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Nikolas\Desktop\ask3\ask3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>12</LINE></reset>
+  <ISR1><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>64</LINE></ISR1>
+  <ISR_TIMER1_OVF><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>87</LINE></ISR_TIMER1_OVF>
+  <main><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>35</LINE></main>
+  <main2><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>38</LINE></main2>
+  <reload1><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>54</LINE></reload1>
+  <wait_msec><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>92</LINE></wait_msec>
+  <reload2><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>77</LINE></reload2>
+  <wait_usec><FILE>C:\Users\Nikolas\Desktop\ask3\ask3.asm</FILE><LINE>104</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>
