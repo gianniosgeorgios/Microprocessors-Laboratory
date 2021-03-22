@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\labels.tmp" -fI -W+ie -C V2E -o "C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.hex" -d "C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.obj" -e "C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.eep" -m "C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.map" "C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm"

@@ -1,0 +1,53 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <_tmp_><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>4</LINE></_tmp_>
+  <reset><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>8</LINE></reset>
+  <first_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>22</LINE></first_key>
+  <scan_keypad_rising_edge><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>216</LINE></scan_keypad_rising_edge>
+  <keypad_to_hex><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>163</LINE></keypad_to_hex>
+  <second_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>33</LINE></second_key>
+  <sign><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>61</LINE></sign>
+  <zero><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>48</LINE></zero>
+  <lcd_init><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>277</LINE></lcd_init>
+  <lcd_data><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>316</LINE></lcd_data>
+  <positive><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>73</LINE></positive>
+  <negative><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>65</LINE></negative>
+  <bcd><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>76</LINE></bcd>
+  <ekat><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>82</LINE></ekat>
+  <deci><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>86</LINE></deci>
+  <mon><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>92</LINE></mon>
+  <end><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>98</LINE></end>
+  <greater1><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>111</LINE></greater1>
+  <greater2><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>118</LINE></greater2>
+  <lcd><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>124</LINE></lcd>
+  <triple><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>152</LINE></triple>
+  <double><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>138</LINE></double>
+  <single><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>147</LINE></single>
+  <scan_keypad><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>243</LINE></scan_keypad>
+  <wait_msec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>353</LINE></wait_msec>
+  <scan_row><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>263</LINE></scan_row>
+  <back_><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>265</LINE></back_>
+  <wait_usec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>365</LINE></wait_usec>
+  <lcd_command><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>325</LINE></lcd_command>
+  <write_2_nibbles><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask2 (1)\ask2 (1).asm</FILE><LINE>334</LINE></write_2_nibbles>
+ </LABELS>
+</ASSEMBLER_INFO>

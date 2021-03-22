@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.12</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\USER\Desktop\ask3</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\USER\Desktop\ask3\ask3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\USER\Desktop\ask3\ask3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\USER\Desktop\ask3\ask3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\USER\Desktop\ask3\ask3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>3</LINE></reset>
+  <clear><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>14</LINE></clear>
+  <loopp><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>20</LINE></loopp>
+  <timer_is_off><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>26</LINE></timer_is_off>
+  <lcd_init><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>98</LINE></lcd_init>
+  <lcd_data><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>137</LINE></lcd_data>
+  <wait_msec><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>175</LINE></wait_msec>
+  <zero_sec><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>65</LINE></zero_sec>
+  <one_minute><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>72</LINE></one_minute>
+  <zero_min><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>80</LINE></zero_min>
+  <one_hour><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>89</LINE></one_hour>
+  <wait_usec><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>187</LINE></wait_usec>
+  <lcd_command><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>146</LINE></lcd_command>
+  <write_2_nibbles><FILE>C:\Users\USER\Desktop\ask3\ask3.asm</FILE><LINE>155</LINE></write_2_nibbles>
+ </LABELS>
+</ASSEMBLER_INFO>

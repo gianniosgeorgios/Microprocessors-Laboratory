@@ -1,0 +1,50 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.41</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\Nikolas\Desktop\ask2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Nikolas\Desktop\ask2\ask2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Nikolas\Desktop\ask2\ask2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Nikolas\Desktop\ask2\ask2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <_tmp_><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>4</LINE></_tmp_>
+  <reset><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>8</LINE></reset>
+  <first_key><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>22</LINE></first_key>
+  <keypad_to_hex><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>133</LINE></keypad_to_hex>
+  <second_key><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>34</LINE></second_key>
+  <sign><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>56</LINE></sign>
+  <zero><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>49</LINE></zero>
+  <lcd_init><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>247</LINE></lcd_init>
+  <lcd_data><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>286</LINE></lcd_data>
+  <positive><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>68</LINE></positive>
+  <negative><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>60</LINE></negative>
+  <bcd><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>71</LINE></bcd>
+  <ekat><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>77</LINE></ekat>
+  <deci><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>81</LINE></deci>
+  <mon><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>87</LINE></mon>
+  <end><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>93</LINE></end>
+  <triple><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>122</LINE></triple>
+  <double><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>108</LINE></double>
+  <single><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>117</LINE></single>
+  <scan_keypad_rising_edge><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>186</LINE></scan_keypad_rising_edge>
+  <scan_keypad><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>213</LINE></scan_keypad>
+  <wait_msec><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>323</LINE></wait_msec>
+  <scan_row><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>233</LINE></scan_row>
+  <back_><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>235</LINE></back_>
+  <wait_usec><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>335</LINE></wait_usec>
+  <lcd_command><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>295</LINE></lcd_command>
+  <write_2_nibbles><FILE>C:\Users\Nikolas\Desktop\ask2\ask2.asm</FILE><LINE>304</LINE></write_2_nibbles>
+ </LABELS>
+</ASSEMBLER_INFO>

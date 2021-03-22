@@ -1,0 +1,41 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>3</LINE></reset>
+  <clear><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>17</LINE></clear>
+  <loopp><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>23</LINE></loopp>
+  <lcd_init><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>126</LINE></lcd_init>
+  <lcd_data><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>165</LINE></lcd_data>
+  <wait_msec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>203</LINE></wait_msec>
+  <zero_sec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>65</LINE></zero_sec>
+  <stop_1><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>57</LINE></stop_1>
+  <one_minute><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>79</LINE></one_minute>
+  <stop_2><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>71</LINE></stop_2>
+  <zero_min><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>94</LINE></zero_min>
+  <stop_3><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>86</LINE></stop_3>
+  <one_hour><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>110</LINE></one_hour>
+  <stop_4><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>102</LINE></stop_4>
+  <stop_5><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>116</LINE></stop_5>
+  <wait_usec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>215</LINE></wait_usec>
+  <lcd_command><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>174</LINE></lcd_command>
+  <write_2_nibbles><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask3 (1)\ask3 (1).asm</FILE><LINE>183</LINE></write_2_nibbles>
+ </LABELS>
+</ASSEMBLER_INFO>

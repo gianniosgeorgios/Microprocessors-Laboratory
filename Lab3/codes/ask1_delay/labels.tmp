@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <_tmp_><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>4</LINE></_tmp_>
+  <reset><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>8</LINE></reset>
+  <first_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>23</LINE></first_key>
+  <scan_keypad_rising_edge><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>123</LINE></scan_keypad_rising_edge>
+  <keypad_to_ascii><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>70</LINE></keypad_to_ascii>
+  <second_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>31</LINE></second_key>
+  <wrong><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>54</LINE></wrong>
+  <alright><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>44</LINE></alright>
+  <wait_msec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>185</LINE></wait_msec>
+  <scan_keypad><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>150</LINE></scan_keypad>
+  <scan_row><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>170</LINE></scan_row>
+  <back_><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>172</LINE></back_>
+  <wait_usec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\3d\gx\ask1_delay\ask1.asm</FILE><LINE>197</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>
