@@ -34,5 +34,5 @@ Laboratory exercises on 8085 and AVR for "Microprocessors Laboratory" course , N
 3. Reading, analyzing and processing analog signals
 
 
-### Lab 6: Iot Application for 
+### Lab 6: Iot Application for a Hospital 
 
