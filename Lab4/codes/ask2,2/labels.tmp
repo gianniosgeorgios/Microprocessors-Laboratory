@@ -1,0 +1,61 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <_tmp_><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>4</LINE></_tmp_>
+  <reset><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>8</LINE></reset>
+  <first_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>22</LINE></first_key>
+  <scan_keypad_rising_edge><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>333</LINE></scan_keypad_rising_edge>
+  <keypad_to_hex><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>280</LINE></keypad_to_hex>
+  <is_letter1><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>40</LINE></is_letter1>
+  <second_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>45</LINE></second_key>
+  <is_letter2><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>62</LINE></is_letter2>
+  <third_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>66</LINE></third_key>
+  <is_letter3><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>84</LINE></is_letter3>
+  <fourth_key><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>88</LINE></fourth_key>
+  <is_letter4><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>105</LINE></is_letter4>
+  <print_keys><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>111</LINE></print_keys>
+  <lcd_init><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>394</LINE></lcd_init>
+  <lcd_data><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>433</LINE></lcd_data>
+  <check_device><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>126</LINE></check_device>
+  <check2><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>153</LINE></check2>
+  <error><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>173</LINE></error>
+  <no_div><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>132</LINE></no_div>
+  <check_zero><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>160</LINE></check_zero>
+  <negative><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>186</LINE></negative>
+  <positive><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>199</LINE></positive>
+  <zero><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>164</LINE></zero>
+  <bcd><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>209</LINE></bcd>
+  <ekat><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>216</LINE></ekat>
+  <deci><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>220</LINE></deci>
+  <mon><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>226</LINE></mon>
+  <end><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>234</LINE></end>
+  <triple><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>265</LINE></triple>
+  <double><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>243</LINE></double>
+  <single><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>256</LINE></single>
+  <scan_keypad><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>360</LINE></scan_keypad>
+  <wait_msec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>470</LINE></wait_msec>
+  <scan_row><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>380</LINE></scan_row>
+  <back_><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>382</LINE></back_>
+  <wait_usec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>482</LINE></wait_usec>
+  <lcd_command><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>442</LINE></lcd_command>
+  <write_2_nibbles><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\4h erg\ask2,2\ask2,2.asm</FILE><LINE>451</LINE></write_2_nibbles>
+ </LABELS>
+</ASSEMBLER_INFO>

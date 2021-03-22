@@ -1,0 +1,461 @@
+
+ask1c.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000218  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000002  00800060  00800060  0000028c  2**0
+                  ALLOC
+  2 .debug_aranges 00000020  00000000  00000000  0000028c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_pubnames 000000a6  00000000  00000000  000002ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000004dd  00000000  00000000  00000352  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000159  00000000  00000000  0000082f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000038e  00000000  00000000  00000988  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000080  00000000  00000000  00000d18  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    0000017b  00000000  00000000  00000d98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    0000016d  00000000  00000000  00000f13  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   8:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  10:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  14:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  18:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  1c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  28:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  2c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  30:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  3c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  40:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  44:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  48:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  4c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  50:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_clear_bss>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	01 c0       	rjmp	.+2      	; 0x6a <.do_clear_bss_start>
+
+00000068 <.do_clear_bss_loop>:
+  68:	1d 92       	st	X+, r1
+
+0000006a <.do_clear_bss_start>:
+  6a:	a2 36       	cpi	r26, 0x62	; 98
+  6c:	b1 07       	cpc	r27, r17
+  6e:	e1 f7       	brne	.-8      	; 0x68 <.do_clear_bss_loop>
+  70:	0e 94 de 00 	call	0x1bc	; 0x1bc <main>
+  74:	0c 94 0a 01 	jmp	0x214	; 0x214 <_exit>
+
+00000078 <__bad_interrupt>:
+  78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000007c <one_wire_reset>:
+		}
+	}
+}
+
+char one_wire_reset(){
+	PORTA=PORTA | (1<<PA4);
+  7c:	dc 9a       	sbi	0x1b, 4	; 27
+	DDRA=DDRA | (1<<PA4);
+  7e:	d4 9a       	sbi	0x1a, 4	; 26
+	PORTA=PORTA & ~(1<<PA4);
+  80:	dc 98       	cbi	0x1b, 4	; 27
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  82:	80 ec       	ldi	r24, 0xC0	; 192
+  84:	93 e0       	ldi	r25, 0x03	; 3
+  86:	01 97       	sbiw	r24, 0x01	; 1
+  88:	f1 f7       	brne	.-4      	; 0x86 <one_wire_reset+0xa>
+	
+	_delay_us(480);
+
+	DDRA=DDRA & ~(1<<PA4);
+  8a:	d4 98       	cbi	0x1a, 4	; 26
+	PORTA=PORTA & ~(1<<PA4);
+  8c:	dc 98       	cbi	0x1b, 4	; 27
+  8e:	88 ec       	ldi	r24, 0xC8	; 200
+  90:	90 e0       	ldi	r25, 0x00	; 0
+  92:	01 97       	sbiw	r24, 0x01	; 1
+  94:	f1 f7       	brne	.-4      	; 0x92 <one_wire_reset+0x16>
+	
+	_delay_us(100);
+
+	char x=(PINA & (1<<PA4));
+  96:	89 b3       	in	r24, 0x19	; 25
+  98:	e8 ef       	ldi	r30, 0xF8	; 248
+  9a:	f2 e0       	ldi	r31, 0x02	; 2
+  9c:	31 97       	sbiw	r30, 0x01	; 1
+  9e:	f1 f7       	brne	.-4      	; 0x9c <one_wire_reset+0x20>
+  a0:	90 e0       	ldi	r25, 0x00	; 0
+  a2:	84 ff       	sbrs	r24, 4
+  a4:	91 e0       	ldi	r25, 0x01	; 1
+	_delay_us(380);
+
+	if(x==0x10) return 0x00;
+	else return 0x01;
+}
+  a6:	89 2f       	mov	r24, r25
+  a8:	08 95       	ret
+
+000000aa <one_wire_transmit_bit>:
+
+void one_wire_transmit_bit(char x){
+	DDRA=DDRA | (1<<PA4);
+  aa:	d4 9a       	sbi	0x1a, 4	; 26
+	PORTA=PORTA & (0<<PA4);
+  ac:	9b b3       	in	r25, 0x1b	; 27
+  ae:	1b ba       	out	0x1b, r1	; 27
+    can be achieved.
+*/
+void
+_delay_loop_1(uint8_t __count)
+{
+	__asm__ volatile (
+  b0:	95 e0       	ldi	r25, 0x05	; 5
+  b2:	9a 95       	dec	r25
+  b4:	f1 f7       	brne	.-4      	; 0xb2 <one_wire_transmit_bit+0x8>
+	_delay_us(2);
+	if((x & 0x01)==1) PORTA=PORTA | (1<<PA4);
+  b6:	80 ff       	sbrs	r24, 0
+  b8:	02 c0       	rjmp	.+4      	; 0xbe <one_wire_transmit_bit+0x14>
+  ba:	dc 9a       	sbi	0x1b, 4	; 27
+  bc:	02 c0       	rjmp	.+4      	; 0xc2 <one_wire_transmit_bit+0x18>
+	if((x & 0x01)==0) PORTA=PORTA & (0<<PA4);
+  be:	8b b3       	in	r24, 0x1b	; 27
+  c0:	1b ba       	out	0x1b, r1	; 27
+  c2:	8a e9       	ldi	r24, 0x9A	; 154
+  c4:	8a 95       	dec	r24
+  c6:	f1 f7       	brne	.-4      	; 0xc4 <one_wire_transmit_bit+0x1a>
+	_delay_us(58);
+	DDRA=DDRA & (0<<PA4);
+  c8:	8a b3       	in	r24, 0x1a	; 26
+  ca:	1a ba       	out	0x1a, r1	; 26
+	PORTA=PORTA & (0<<PA4);
+  cc:	8b b3       	in	r24, 0x1b	; 27
+  ce:	1b ba       	out	0x1b, r1	; 27
+  d0:	82 e0       	ldi	r24, 0x02	; 2
+  d2:	8a 95       	dec	r24
+  d4:	f1 f7       	brne	.-4      	; 0xd2 <one_wire_transmit_bit+0x28>
+	_delay_us(1);
+}
+  d6:	08 95       	ret
+
+000000d8 <one_wire_transmit_byte>:
+
+void one_wire_transmit_byte(char x){
+  d8:	1f 93       	push	r17
+  da:	cf 93       	push	r28
+  dc:	df 93       	push	r29
+  de:	18 2f       	mov	r17, r24
+  e0:	c0 e0       	ldi	r28, 0x00	; 0
+  e2:	d0 e0       	ldi	r29, 0x00	; 0
+	for(int i=0; i<8; i++){
+		if((x & 0x01)==1) one_wire_transmit_bit(0x01);
+  e4:	10 ff       	sbrs	r17, 0
+  e6:	02 c0       	rjmp	.+4      	; 0xec <one_wire_transmit_byte+0x14>
+  e8:	81 e0       	ldi	r24, 0x01	; 1
+  ea:	01 c0       	rjmp	.+2      	; 0xee <one_wire_transmit_byte+0x16>
+		else one_wire_transmit_bit(0x00);
+  ec:	80 e0       	ldi	r24, 0x00	; 0
+  ee:	0e 94 55 00 	call	0xaa	; 0xaa <one_wire_transmit_bit>
+	PORTA=PORTA & (0<<PA4);
+	_delay_us(1);
+}
+
+void one_wire_transmit_byte(char x){
+	for(int i=0; i<8; i++){
+  f2:	21 96       	adiw	r28, 0x01	; 1
+  f4:	c8 30       	cpi	r28, 0x08	; 8
+  f6:	d1 05       	cpc	r29, r1
+  f8:	11 f0       	breq	.+4      	; 0xfe <one_wire_transmit_byte+0x26>
+		if((x & 0x01)==1) one_wire_transmit_bit(0x01);
+		else one_wire_transmit_bit(0x00);
+		x=x>>1;
+  fa:	16 95       	lsr	r17
+  fc:	f3 cf       	rjmp	.-26     	; 0xe4 <one_wire_transmit_byte+0xc>
+	}
+}
+  fe:	df 91       	pop	r29
+ 100:	cf 91       	pop	r28
+ 102:	1f 91       	pop	r17
+ 104:	08 95       	ret
+
+00000106 <one_wire_receive_bit>:
+
+char one_wire_receive_bit(){
+	char x=0x00;
+	DDRA=DDRA | (1<<PA4);
+ 106:	d4 9a       	sbi	0x1a, 4	; 26
+	PORTA=PORTA & (0<<PA4);
+ 108:	8b b3       	in	r24, 0x1b	; 27
+ 10a:	1b ba       	out	0x1b, r1	; 27
+ 10c:	85 e0       	ldi	r24, 0x05	; 5
+ 10e:	8a 95       	dec	r24
+ 110:	f1 f7       	brne	.-4      	; 0x10e <one_wire_receive_bit+0x8>
+	_delay_us(2);
+	DDRA=DDRA & (0<<PA4);
+ 112:	8a b3       	in	r24, 0x1a	; 26
+ 114:	1a ba       	out	0x1a, r1	; 26
+	PORTA=PORTA & (0<<PA4);
+ 116:	8b b3       	in	r24, 0x1b	; 27
+ 118:	1b ba       	out	0x1b, r1	; 27
+ 11a:	8a e1       	ldi	r24, 0x1A	; 26
+ 11c:	8a 95       	dec	r24
+ 11e:	f1 f7       	brne	.-4      	; 0x11c <one_wire_receive_bit+0x16>
+	_delay_us(10);
+	if((PINA & 0x10)==0x10) x=0x01;
+ 120:	89 b3       	in	r24, 0x19	; 25
+ 122:	92 e8       	ldi	r25, 0x82	; 130
+ 124:	9a 95       	dec	r25
+ 126:	f1 f7       	brne	.-4      	; 0x124 <one_wire_receive_bit+0x1e>
+ 128:	90 e0       	ldi	r25, 0x00	; 0
+ 12a:	24 e0       	ldi	r18, 0x04	; 4
+ 12c:	96 95       	lsr	r25
+ 12e:	87 95       	ror	r24
+ 130:	2a 95       	dec	r18
+ 132:	e1 f7       	brne	.-8      	; 0x12c <one_wire_receive_bit+0x26>
+	_delay_us(49);
+	return x;
+}
+ 134:	81 70       	andi	r24, 0x01	; 1
+ 136:	08 95       	ret
+
+00000138 <one_wire_receive_byte>:
+
+char one_wire_receive_byte(){
+ 138:	1f 93       	push	r17
+ 13a:	cf 93       	push	r28
+ 13c:	df 93       	push	r29
+ 13e:	10 e0       	ldi	r17, 0x00	; 0
+ 140:	c0 e0       	ldi	r28, 0x00	; 0
+ 142:	d0 e0       	ldi	r29, 0x00	; 0
+	char x, y=0x00;
+	for(int i=0; i<8; i++){
+		x=one_wire_receive_bit();
+ 144:	0e 94 83 00 	call	0x106	; 0x106 <one_wire_receive_bit>
+ 148:	98 2f       	mov	r25, r24
+		y=y>>1;
+ 14a:	81 2f       	mov	r24, r17
+ 14c:	86 95       	lsr	r24
+		if((x & 0x01)==1) y=y|0x80;
+ 14e:	90 ff       	sbrs	r25, 0
+ 150:	03 c0       	rjmp	.+6      	; 0x158 <one_wire_receive_byte+0x20>
+ 152:	18 2f       	mov	r17, r24
+ 154:	10 68       	ori	r17, 0x80	; 128
+ 156:	02 c0       	rjmp	.+4      	; 0x15c <one_wire_receive_byte+0x24>
+		else y=y|x;
+ 158:	18 2f       	mov	r17, r24
+ 15a:	19 2b       	or	r17, r25
+	return x;
+}
+
+char one_wire_receive_byte(){
+	char x, y=0x00;
+	for(int i=0; i<8; i++){
+ 15c:	21 96       	adiw	r28, 0x01	; 1
+ 15e:	c8 30       	cpi	r28, 0x08	; 8
+ 160:	d1 05       	cpc	r29, r1
+ 162:	81 f7       	brne	.-32     	; 0x144 <one_wire_receive_byte+0xc>
+		y=y>>1;
+		if((x & 0x01)==1) y=y|0x80;
+		else y=y|x;
+	}
+	return y;
+}
+ 164:	81 2f       	mov	r24, r17
+ 166:	df 91       	pop	r29
+ 168:	cf 91       	pop	r28
+ 16a:	1f 91       	pop	r17
+ 16c:	08 95       	ret
+
+0000016e <temperature>:
+			
+
+char * temperature(){
+	static char x[2];
+	char check=one_wire_reset();
+ 16e:	0e 94 3e 00 	call	0x7c	; 0x7c <one_wire_reset>
+	//PORTC=check;	correct
+	if((check & 0x01)==0) {
+ 172:	80 ff       	sbrs	r24, 0
+ 174:	0e c0       	rjmp	.+28     	; 0x192 <temperature+0x24>
+		//PORTC=0xF0; correct
+		x[0]=0x00;
+		x[1]=0x80;
+		return x;
+	}
+	one_wire_transmit_byte(0xCC);
+ 176:	8c ec       	ldi	r24, 0xCC	; 204
+ 178:	0e 94 6c 00 	call	0xd8	; 0xd8 <one_wire_transmit_byte>
+	one_wire_transmit_byte(0x44);
+ 17c:	84 e4       	ldi	r24, 0x44	; 68
+ 17e:	0e 94 6c 00 	call	0xd8	; 0xd8 <one_wire_transmit_byte>
+	while((one_wire_receive_bit() & 0x01)==0);
+ 182:	0e 94 83 00 	call	0x106	; 0x106 <one_wire_receive_bit>
+ 186:	80 ff       	sbrs	r24, 0
+ 188:	fc cf       	rjmp	.-8      	; 0x182 <temperature+0x14>
+
+	if((one_wire_reset() & 0x01)==0) {
+ 18a:	0e 94 3e 00 	call	0x7c	; 0x7c <one_wire_reset>
+ 18e:	80 fd       	sbrc	r24, 0
+ 190:	04 c0       	rjmp	.+8      	; 0x19a <temperature+0x2c>
+		x[0]=0x00;
+ 192:	10 92 60 00 	sts	0x0060, r1
+		x[1]=0x80;
+ 196:	80 e8       	ldi	r24, 0x80	; 128
+ 198:	0c c0       	rjmp	.+24     	; 0x1b2 <temperature+0x44>
+		return x;
+	}
+	one_wire_transmit_byte(0xCC);
+ 19a:	8c ec       	ldi	r24, 0xCC	; 204
+ 19c:	0e 94 6c 00 	call	0xd8	; 0xd8 <one_wire_transmit_byte>
+	one_wire_transmit_byte(0xBE);
+ 1a0:	8e eb       	ldi	r24, 0xBE	; 190
+ 1a2:	0e 94 6c 00 	call	0xd8	; 0xd8 <one_wire_transmit_byte>
+	x[0]=one_wire_receive_byte();
+ 1a6:	0e 94 9c 00 	call	0x138	; 0x138 <one_wire_receive_byte>
+ 1aa:	80 93 60 00 	sts	0x0060, r24
+	x[1]=one_wire_receive_byte();
+ 1ae:	0e 94 9c 00 	call	0x138	; 0x138 <one_wire_receive_byte>
+ 1b2:	80 93 61 00 	sts	0x0061, r24
+
+	return x;
+
+}
+ 1b6:	80 e6       	ldi	r24, 0x60	; 96
+ 1b8:	90 e0       	ldi	r25, 0x00	; 0
+ 1ba:	08 95       	ret
+
+000001bc <main>:
+char one_wire_receive_bit(void);
+char one_wire_receive_byte(void);
+char * temperature(void);
+
+void main(void)
+{
+ 1bc:	1f 93       	push	r17
+ 1be:	cf 93       	push	r28
+ 1c0:	df 93       	push	r29
+	while(1){
+		SP = RAMEND;
+ 1c2:	cf e5       	ldi	r28, 0x5F	; 95
+ 1c4:	d4 e0       	ldi	r29, 0x04	; 4
+		char *temp;
+		DDRB=0xFF; // Initiating PORT B as output
+ 1c6:	1f ef       	ldi	r17, 0xFF	; 255
+char * temperature(void);
+
+void main(void)
+{
+	while(1){
+		SP = RAMEND;
+ 1c8:	de bf       	out	0x3e, r29	; 62
+ 1ca:	cd bf       	out	0x3d, r28	; 61
+		char *temp;
+		DDRB=0xFF; // Initiating PORT B as output
+ 1cc:	17 bb       	out	0x17, r17	; 23
+	
+		temp=temperature();
+		while (temp[0]==0x00 && temp[1]==0x80){
+			temp=temperature();
+ 1ce:	0e 94 b7 00 	call	0x16e	; 0x16e <temperature>
+ 1d2:	fc 01       	movw	r30, r24
+		SP = RAMEND;
+		char *temp;
+		DDRB=0xFF; // Initiating PORT B as output
+	
+		temp=temperature();
+		while (temp[0]==0x00 && temp[1]==0x80){
+ 1d4:	90 81       	ld	r25, Z
+ 1d6:	99 23       	and	r25, r25
+ 1d8:	19 f4       	brne	.+6      	; 0x1e0 <main+0x24>
+ 1da:	81 81       	ldd	r24, Z+1	; 0x01
+ 1dc:	80 38       	cpi	r24, 0x80	; 128
+ 1de:	b9 f3       	breq	.-18     	; 0x1ce <main+0x12>
+			temp=temperature();
+		}
+
+		if(temp[1]==0x00){
+ 1e0:	81 81       	ldd	r24, Z+1	; 0x01
+ 1e2:	88 23       	and	r24, r24
+ 1e4:	39 f4       	brne	.+14     	; 0x1f4 <main+0x38>
+ 1e6:	89 2f       	mov	r24, r25
+ 1e8:	86 95       	lsr	r24
+			if((temp[0] & 0x01)==1) {
+ 1ea:	90 fd       	sbrc	r25, 0
+				temp[0]=temp[0]>>1;
+				temp[0]++;
+ 1ec:	8f 5f       	subi	r24, 0xFF	; 255
+			}
+			else temp[0]=temp[0]>>1;
+ 1ee:	80 83       	st	Z, r24
+			PORTB=temp[0];
+ 1f0:	80 81       	ld	r24, Z
+ 1f2:	0e c0       	rjmp	.+28     	; 0x210 <main+0x54>
+		}
+		else if(temp[1]==0x80){
+ 1f4:	80 38       	cpi	r24, 0x80	; 128
+ 1f6:	41 f7       	brne	.-48     	; 0x1c8 <main+0xc>
+			temp[0]=~temp[0];
+			temp[0]++;
+ 1f8:	89 2f       	mov	r24, r25
+ 1fa:	81 95       	neg	r24
+ 1fc:	80 83       	st	Z, r24
+ 1fe:	98 2f       	mov	r25, r24
+ 200:	96 95       	lsr	r25
+			if((temp[0] & 0x01)==1) {
+ 202:	80 fd       	sbrc	r24, 0
+				temp[0]=temp[0]>>1;
+				temp[0]++;
+ 204:	9f 5f       	subi	r25, 0xFF	; 255
+			}
+			else temp[0]=temp[0]>>1;
+ 206:	90 83       	st	Z, r25
+
+			temp[0]=~temp[0];
+			temp[0]++;
+ 208:	80 81       	ld	r24, Z
+ 20a:	81 95       	neg	r24
+ 20c:	80 83       	st	Z, r24
+			PORTB= temp[0] | 0x80;
+ 20e:	80 68       	ori	r24, 0x80	; 128
+ 210:	88 bb       	out	0x18, r24	; 24
+ 212:	da cf       	rjmp	.-76     	; 0x1c8 <main+0xc>
+
+00000214 <_exit>:
+ 214:	f8 94       	cli
+
+00000216 <__stop_program>:
+ 216:	ff cf       	rjmp	.-2      	; 0x216 <__stop_program>
