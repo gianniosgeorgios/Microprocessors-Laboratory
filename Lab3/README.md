@@ -19,4 +19,6 @@ The input,one 2-digit HEX (as 2nd complement) number, is read from keypad. Then 
 ```
 80=-128
 ```
-#### 3. Digital timer in form `MM:SS `
+#### 3. Digital timer in LCD screen 
+
+On `LCD` screen a timer is displayed in form `MM:SS ` When timer reaches the value `59:59` starts from beggining.  Timer starts if `PB7` is pressed, and continues provided this. It stops if `PB0` is pressed.   
