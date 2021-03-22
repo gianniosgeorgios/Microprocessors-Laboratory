@@ -1,0 +1,101 @@
+IN  10H       ;αίρει την προστασία της μνήμης 
+START:
+LXI H,0A05H	;Θεση μνημης που θα βαλουμε το αποτελεσμα(τυχαία)
+CALL KIND     ; Διάβασε 1o πλήκτρο
+MOV B,A	
+CALL KIND      ; Διάβασε 2o πλήκτρο
+MOV C,A        ; To x στον Α, το y στον Β
+MOV A,B        ; μετά από swap  
+MOV B,C    
+CMP B          ; CY == (x<y)
+JC NEGATIVE
+
+POSITVE:       ; x-y>=0
+SUB B          ; A = x-y
+CPI 0AH        ; Αν Α>=10 -> διψήφιος αριθμός
+JNC DOUBLE_DIGIT_POSITIVE
+MOV M,A        ;Αρχικοποίησης της 7-segment οθόνης 
+               ;όλα κενά εκτος από το πρώτο αριστερά
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+LXI D,0A00H	;Βάζουμε στον D-E την θέση μνήμης όπου αρχίζουν τα	 
+CALL STDM	;δεδομένα που θέλουμε να δείξουμε καλούμε την STDM
+CALL DCD	;και εμφανιζουμε με την DCD
+JMP START
+
+NEGATIVE:     ; x-y<0
+MOV C,A       ; μετά από swap καταλήγουμε στο Α=y-x
+MOV A,B
+SUB C
+CPI 0AH       ; Αν Α>=10 -> διψήφιος αριθμός
+JNC DOUBLE_DIGIT_NEGATIVE
+MVI M,1CH     ;Αρχικοποίησης της 7-segment οθόνης 
+              ;όλα κενά εκτος από το πρώτο αριστερά (πρόσημο -) και το
+              ;δεύτερο από αριστερά ο αριθμός Α
+DCX H
+MOV M,A
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+LXI D,0A00H	;Βάζουμε στον D-E την θέση μνήμης όπου αρχίζουν τα	 
+CALL STDM	;δεδομένα που θέλουμε να δείξουμε καλούμε την STDM
+CALL DCD	;και εμφανιζουμε με την DCD
+JMP START
+
+DOUBLE_DIGIT_POSITIVE:
+SUI 0AH       ;Α=Α-10
+MVI M,01H     ;Αρχικοποίησης της 7-segment οθόνης 
+              ;όλα κενά εκτος από το πρώτο αριστερά ψηφίο 1 και το
+              ;δεύτερο από αριστερά ο αριθμός Α
+
+DCX H
+MOV M,A
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+LXI D,0A00H	;Βάζουμε στον D-E την θέση μνήμης όπου αρχίζουν τα	 
+CALL STDM	;δεδομένα που θέλουμε να δείξουμε καλούμε την STDM
+CALL DCD	;και εμφανιζουμε με την DCD
+JMP START
+
+DOUBLE_DIGIT_NEGATIVE:
+SUI 0AH
+MVI M,1CH     ;Αρχικοποίησης της 7-segment οθόνης 
+              ;όλα κενά εκτος από το πρώτο αριστερά (πρόσημο -)
+              ;το δεύτερο από αριστερά (ψηφίο 1) 
+              ;και το τρίτο από αριστερά ψηφίο ο αριθμός Α
+
+DCX H
+MVI M,01H
+DCX H
+MOV M,A
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+DCX H
+MVI M,10H
+LXI D,0A00H	;Βάζουμε στον D-E την θέση μνήμης όπου αρχίζουν τα	 
+CALL STDM	;δεδομένα που θέλουμε να δείξουμε καλούμε την STDM
+CALL DCD	;και εμφανιζουμε με την DCD
+JMP START
+
+END
