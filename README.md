@@ -4,7 +4,7 @@ Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Labora
 
 ### Lab 1: Familiarizing with 8085 microcontroller and its Instruction Set Architecture
 
-1. Create a simple timer on `LEDS`  
+1. Create a simple timer on LEDS
 2. Counting external interrputs during timing proccess 
 3. Compute a numeric expression and displaying to screen 
 4. Controller of an wagon's automation
@@ -20,7 +20,7 @@ Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Labora
 
 1. Building a simple Εlectronic lock
 2. Hex to dec convertion on LCD screen 
-3. Digital timer in form `MM:SS`
+3. Digital timer in form MM:SS
 
 ### Lab 4: Combining sensory data from temperature sources
 
