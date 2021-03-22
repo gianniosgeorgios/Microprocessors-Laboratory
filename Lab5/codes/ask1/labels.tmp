@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</FILE><LINE>3</LINE></start>
+  <usart_init><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</FILE><LINE>38</LINE></usart_init>
+  <looop><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</FILE><LINE>30</LINE></looop>
+  <exit><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</FILE><LINE>63</LINE></exit>
+  <usart_transmit><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</FILE><LINE>51</LINE></usart_transmit>
+  <usart_receive><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask1\ask1.asm</FILE><LINE>57</LINE></usart_receive>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,44 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\Atmel\AVR Tools\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>21</LINE></reset>
+  <ADC_interrupt><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>44</LINE></ADC_interrupt>
+  <usart_init><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>154</LINE></usart_init>
+  <adc_init><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>179</LINE></adc_init>
+  <start><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>34</LINE></start>
+  <wait_msec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>190</LINE></wait_msec>
+  <loop><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>53</LINE></loop>
+  <convert1><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>61</LINE></convert1>
+  <convert2><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>71</LINE></convert2>
+  <ekato><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>86</LINE></ekato>
+  <decc><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>93</LINE></decc>
+  <mon><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>102</LINE></mon>
+  <screen><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>129</LINE></screen>
+  <check_mon><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>106</LINE></check_mon>
+  <mon_big_than_10><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>112</LINE></mon_big_than_10>
+  <check_dec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>116</LINE></check_dec>
+  <dec_big_than_10><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>122</LINE></dec_big_than_10>
+  <check_ekat><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>126</LINE></check_ekat>
+  <usart_transmit><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>167</LINE></usart_transmit>
+  <usart_receive><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>173</LINE></usart_receive>
+  <wait_usec><FILE>C:\Documents and Settings\mlab.STUDENTVM\Desktop\5th\ask2\ask2.asm</FILE><LINE>202</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>
