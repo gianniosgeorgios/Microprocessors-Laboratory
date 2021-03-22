@@ -36,3 +36,5 @@ Laboratory exercises on 8085 and AVR for "Microprocessors Laboratory" course , N
 
 ### Lab 6: Iot Application for a Hospital 
 
+1. Taking temperature of patients in different rooms and displaying to doctor's screen
+
