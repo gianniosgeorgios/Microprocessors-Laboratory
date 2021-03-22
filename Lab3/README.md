@@ -11,9 +11,11 @@ in total.
 
 The input,one 2-digit HEX (as 2nd complement) number, is read from keypad. Then is converted to DECIMAL form with sign. Examples:
 
+* Example 1:
 ```
 6E=+110
 ```
+* Example 2: 
 ```
 80=-128
 ```
