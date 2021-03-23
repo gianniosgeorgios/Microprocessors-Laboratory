@@ -13,6 +13,5 @@ The input number ([0-8]) is read from `ARDUINO IDE` and is sent to board, in ord
 
 #### 3. Reading, analyzing and processing **Analog signals**
 
-* The analog input of potentiometer is converted to digital output in `UART` (input is mapped to [0, 4.99] range).
+The analog input of potentiometer is converted to digital output in `UART` (input is mapped to [0, 4.99] range).
 
-*
