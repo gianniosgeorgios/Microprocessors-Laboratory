@@ -12,7 +12,7 @@ Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Labora
 3. Compute a numeric expression and displaying to `LCD` screen 
 4. Controller of an wagon's automation mobving through `LEDS`
 
-### Lab 2: Familiarizing with ARM  microcontroller and its Instruction Set Architecture
+### Lab 2: Familiarizing with AVR microcontroller and its Instruction Set Architecture
 
 1. Simple timer on `LEDS PORT` and counting external interrputs 
 2. Simple timer on `LEDS PORT` and counting on-off  dip - switches
