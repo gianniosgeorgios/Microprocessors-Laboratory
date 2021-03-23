@@ -1,6 +1,6 @@
 ### Lab 2: Familiarizing with AVR  microcontroller and its Instruction Set Architecture
 
-![arm-processor](https://user-images.githubusercontent.com/50829499/112064647-fbf79380-8b6b-11eb-86aa-8ed6cd905433.jpg)
+![1](https://user-images.githubusercontent.com/50829499/112138842-aa3a2200-8bda-11eb-93d1-2eef6ec321c8.jpg)
 
 #### 1. Simple timer on `LEDS PORT` and counting external interrputs 
 
