@@ -42,3 +42,4 @@ Hands-on Laboratory exercises on 8085 and AVR boards for "Microprocessors Labora
 
 1. Taking temperature of patients in different rooms and displaying to doctor's screen
 
+Collaborator: [Christos Betzelos](https://github.com/chrisbetze) 
