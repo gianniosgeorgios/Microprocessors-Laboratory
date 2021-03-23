@@ -1,4 +1,4 @@
-### Lab 2: Familiarizing with ARM  microcontroller and its Instruction Set Architecture
+### Lab 2: Familiarizing with AVR  microcontroller and its Instruction Set Architecture
 
 ![arm-processor](https://user-images.githubusercontent.com/50829499/112064647-fbf79380-8b6b-11eb-86aa-8ed6cd905433.jpg)
 
